@@ -856,3 +856,30 @@ footer a:focus {
 .footer-link-icon use {
     fill: #fff;
 }
+
+.picture-action::before{
+    display: inline-block;
+ content: ""; 
+ width:370px ;  
+ height:70px ;
+ background-color:rgba(47, 48, 58, 0.8);
+ position: absolute;
+ top: 221%;
+
+
+}
+.what-we-are-doing{
+    display: flex;
+    justify-content: space-between;
+}
+.picture-action-two::before{
+    display: inline-block;
+ content: ""; 
+ width:370px ;  
+ height: 294px;
+ position: absolute;
+ background-color: rgba(33, 150, 243, 0.9);
+
+ position: absolute;
+}
+
