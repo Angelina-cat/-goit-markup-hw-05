@@ -16,6 +16,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -55,9 +56,7 @@
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
-
-
-            </ul>
+               </ul>
         </div>
 
     </header>
@@ -69,8 +68,19 @@
             <div class="container-hero">
                 <h1 class="decid-my-win">Эффективные решения <br>
                     для вашего бизнеса</h1>
-                <button type=button class="hot-button"> Заказать услугу </button>
+                <button  type=button   class="hot-button data-modal-open "> Заказать услугу </button>
             </div>
+            <div class="anketa-modal is-hidden">
+            <div class="modal-animation">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <p class="text-modal-name">Имя</p>
+                <p class="text-modal-telephone">Телефон</p>
+                <p class="text-modal-mail">Почта</p>
+                <p class="text-modal-comment">Комментарий</p>
+                <p class="text-modal-do">Соглашаюсь с рассылкой и принимаю <a href="" class="blue-color"> Условия договора</a></p>
+                <button type=button class="fly-button"> Отправить </button>
+            </div>
+        </div>
         </section>
 
         <section class="section-team-card-one">
@@ -466,7 +476,24 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js">
+    
+    (() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
 
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+    </script>
 </body>
 
 

@@ -866,7 +866,7 @@ footer a:focus {
  height:70px ;
  background-color:rgba(47, 48, 58, 0.8);
  position: absolute;
- top: 221%;
+ top: 209%;
 opacity: 0;
 
 }
@@ -877,31 +877,165 @@ opacity: 0;
 .picture-action-two:hover::before{
 opacity: 1;
 }
+
 .picture-action-two::before{
     display: inline-block;
- content: ""; 
- width:370px ;  
- height: 294px;
- position: absolute;
- background-color: rgba(33, 150, 243, 0.9);
-
- position: absolute;
- opacity: 0;
+    content: ""; 
+    width:370px;  
+    height:294px;
+    background-color:rgba(33, 150, 243, 0.9);
+    position: absolute;
+    
+   opacity: 0;
 }
-
-.text-animation::before{
+.text-animation{
     display: inline-block;
- content: ""; 
- width:370px ;  
- height: 294px;
- position: absolute;
- 
-
-
- opacity: 0;  
+    content: ""; 
+    position: absolute;
+    width:322px ;
+    height:168px ;
+    top: 20%;
+    left: 10%;
+    opacity: 0;
 }
-.pretty-animation{
-
+.picture-action-two{
     position: relative;
 }
+.text-animation:hover{
+    opacity: 1;
+    }
 
+
+    .text-animation{
+        color:rgba(255, 255, 255, 1);
+        ;
+        font-size: 17px;
+        line-height: 1.5;
+        font-weight: 400;
+    
+        letter-spacing: 0.02em;
+      
+    
+        font-family: Roboto, sans-serif;    
+    }
+    .page-header{
+        position: fixed;
+        width: 100%;
+        background-color:rgba(255, 255, 255, 1);
+        top: 0 ;
+        left: 0;
+    }
+    .anketa-modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width:100% ;
+        min-height:1024px ;
+        background-color:rgba(0, 0, 0, 0.2);
+        ;
+    }
+    .anketa-modal.is-hidden{
+        opacity:0;
+        pointer-events: none;
+    }
+    .modal-animation{
+        position: absolute;
+        top: 221px;
+        left: 50%;
+        transform: translate(-50% );
+        min-width: 528px;
+        min-height:581px ;
+        background-color:rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.1)
+    }
+
+    .text-modal-name{
+        color:  rgba(117, 117, 117, 1);
+
+        font-family: Roboto sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        
+    margin-top: 75px;
+    
+    text-align: left;
+    margin-left: 40px;
+    
+
+    }
+    .text-modal-telephone{
+        color: rgba(117, 117, 117, 1);
+
+        font-family: Roboto sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-left: 40px;
+        padding-top: 54px;
+    }
+    .text-modal-mail{
+        color:  rgba(117, 117, 117, 1);
+
+        font-family: Roboto sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.16px;
+        letter-spacing: 0.01em;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 54px;
+    }
+     .text-modal-comment{
+        color:  rgba(117, 117, 117, 1);
+
+        font-family: Roboto sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-left: 40px;
+        padding-top: 54px;
+     }
+  .text-modal-do{
+    color: rgba(117, 117, 117, 1);
+text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+   padding-top: 144px;}
+
+ .blue-color:hover{
+
+    background: #2196f3;
+ }
+ 
+ .fly-button{
+    display: inline-block;
+
+    background-color: rgba(33, 150, 243, 1);
+    width: 200px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.87;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    height: 50px;
+    border: transparent;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;   
+    margin-top:30px;
+    margin-bottom: 40px;
+ }
