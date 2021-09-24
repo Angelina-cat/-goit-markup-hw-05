@@ -68,9 +68,9 @@
             <div class="container-hero">
                 <h1 class="decid-my-win">Эффективные решения <br>
                     для вашего бизнеса</h1>
-                <button  type=button   class="hot-button data-modal-open "> Заказать услугу </button>
+                <button  type="button" class='hot-button'data-modal-open> Заказать услугу </button>
             </div>
-            <div class="anketa-modal is-hidden">
+            <div class="anketa-modal" data-modal>
             <div class="modal-animation">
                 <p>Оставьте свои данные, мы вам перезвоним</p>
                 <p class="text-modal-name">Имя</p>
@@ -476,24 +476,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js">
-    
-    (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-    </script>
+    <script src="./js/modal.js"> </script>
 </body>
 
 

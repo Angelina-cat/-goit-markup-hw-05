@@ -885,7 +885,9 @@ opacity: 1;
     height:294px;
     background-color:rgba(33, 150, 243, 0.9);
     position: absolute;
-    
+    transform: translate y(-50px);
+    transform-origin:center;
+
    opacity: 0;
 }
 .text-animation{
