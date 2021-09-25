@@ -871,29 +871,34 @@ footer a:focus {
 opacity: 0;
 
 }
+.animation-portfolio:hover::before{
+    opacity: 1;
+    }
+    
+    .animation-portfolio::before{
+        
+        display: inline-block;
+        content: ""; 
+        width:370px;  
+        height:294px;
+        background-color:rgba(33, 150, 243, 0.9);
+        position: absolute;
+        
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+       opacity: 0;
+    }
+    .animation-portfolio:hover::before{
+    transform: translateY(-10%);}
 .what-we-are-doing{
     display: flex;
     justify-content: space-between;
 }
-.portfolio-work li:hover::before{
+.animation-portfolio:hover::before{
 opacity: 1;
 }
 
-.portfolio-work li::before{
-    
-    display: inline-block;
-    content: ""; 
-    width:370px;  
-    height:294px;
-    background-color:rgba(33, 150, 243, 0.9);
-    position: absolute;
-    
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   opacity: 0;
-}
-.portfolio-work li:hover::before{
-transform: translateY(-10%);}
 .text-animation{
     display: inline-block;
     content: ""; 
@@ -904,9 +909,11 @@ transform: translateY(-10%);}
     left: 10%;
     opacity: 0;
 }
-.picture-action-five{
+.animation-portfolio{
     position: relative;
+   
 }
+
 .text-animation:hover{
     opacity: 1;
     }
@@ -940,7 +947,7 @@ transform: translateY(-10%);}
         min-width:100% ;
         min-height:1024px ;
         background-color:rgba(0, 0, 0, 0.2);
-        ;
+        transition:opacity 250ms cubic-bezier(0.4 0 0.2 1);
     }
     .anketa-modal.is-hidden{
         opacity:0;
@@ -954,7 +961,10 @@ transform: translateY(-10%);}
         min-width: 528px;
         min-height:581px ;
         background-color:rgba(255, 255, 255, 1);
-        border: 1px solid rgba(0, 0, 0, 0.1)
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        
+        transition:transform 250ms cubic-bezier(0.4 0 0.2 1);
+        transform: translate(-30%, -30%) scale(1);
     }
 .modal-info{
     color:rgba(33, 33, 33, 1);
@@ -1042,7 +1052,7 @@ text-align: center;
 
  .blue-color:hover{
 
-    background: #2196f3;
+    background:  #2196f3;
  }
  
  .fly-button{
@@ -1083,5 +1093,11 @@ text-align: center;
 .modal-icon:hover{
     border-color: #2196f3;
     fill: #2196f3;
+
+}
+.item-one li::after{
+    content: "";
+    border-bottom: #2196f3; ;
+    position: absolute;
 
 }
