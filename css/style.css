@@ -3,6 +3,7 @@
 ::before {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
@@ -49,23 +50,17 @@ ul {
 
 .team-card {
     display: flex;
-    justify-content: space-between;
-}
-.what-we-are-doing {
-    display: flex;
-}
+    justify-content: space-between;}
+    
+    .what-we-are-doing{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
 
-.what-we-are-doing li:not(:last-child) {
-    margin-right: 30px;
-}
-.plan-b li {
-    margin-right: 30px;
-}
-
-.plan-b li :not(:last-child) {
-    padding-right: 30px;
-}
-
+    }
+  
 .team-card-one {
     color: #212121;
     font-size: 16px;
@@ -302,6 +297,7 @@ nav {
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
+    position: relative;
 }
 .logo-first-two {
     color: #2196f3;
@@ -859,39 +855,40 @@ footer a:focus {
 .footer-link-icon use {
     fill: #fff;
 }
-.picture-action:hover::before{
-    opacity: 1;
-}
-.picture-action::before{
-    display: inline-block;
- content: ""; 
- width:370px ;  
- height:70px ;
- background-color:rgba(47, 48, 58, 0.8);
- position: absolute;
- top: 209%;
-opacity: 0;
 
-}
+
 .animation-portfolio:hover::before{
     opacity: 1;
     }
-    
-    .animation-portfolio::before{
-        
-        display: inline-block;
-        content: ""; 
-        width:370px;  
-        height:294px;
-        background-color:rgba(33, 150, 243, 0.9);
-        position: absolute;
-        
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-       opacity: 0;
+    .picture-action:hover::before{
+        opacity: 1;
     }
-    .animation-portfolio:hover::before{
-    transform: translateY(-10%);}
+    
+    .text-mobile:hover{
+        opacity: 1;
+        }
+    
+   
+        .text-mobile{
+            color:rgba(255, 255, 255, 1);
+            padding-top: 27px;
+            font-size: 17px;
+            line-height: 1.5;
+            font-weight: 400;
+        
+            letter-spacing: 0.02em;
+          
+        
+            font-family: Roboto, sans-serif;    
+        }
+      
+          
+        
+         
+      
+       
+    
+  
 .what-we-are-doing{
     display: flex;
     justify-content: space-between;
@@ -900,35 +897,70 @@ opacity: 0;
 opacity: 1;
 }
 
+.picture-action:hover::before{
+    opacity: 1;}
 
-.text-animation{
-    display: inline-block;
-    content: ""; 
-    position: absolute;
-    width:322px ;
-    height:168px ;
-    top: 20%;
-    left: 10%;
-    opacity: 0;
-}
 .animation-portfolio{
     position: relative;
    
 }
-
+.text-animation{
+    text-align: center;
+  padding-top: 27px;
+   
+    position: absolute;
+    width: 374px;
+    height: 294px;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+}
 .text-animation:hover{
     opacity: 1;
     }
 
+.picture-action-two{
+    overflow: hidden;
+    position: relative;
+}
+.picture-action{
+    position: relative;
+   
+}
+.text-mobile{
+    content: "";
+    text-align: center;
+  padding-top: 224px;
+    margin-top: 0;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color:rgba(47, 48, 58, 0.8);
+    
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+}
+.text-mobile:hover{
+    opacity: 1;
+    }
 
+.box-animation{
+    overflow: hidden;
+    position: relative;}
     .text-animation{
+        content: "";
         color:rgba(255, 255, 255, 1);
         ;
         font-size: 17px;
         line-height: 1.5;
         font-weight: 400;
-    
+    position: absolute;
         letter-spacing: 0.02em;
+        margin-bottom: 251px;
       
     
         font-family: Roboto, sans-serif;    
@@ -954,6 +986,7 @@ opacity: 1;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 528px;
     }
     .anketa-modal.is-hidden{
         opacity:0;
@@ -969,7 +1002,7 @@ opacity: 1;
         background-color:rgba(255, 255, 255, 1);
         border: 1px solid rgba(0, 0, 0, 0.1);
         
-        transition:transform 250ms cubic-bezier(0.4 0 0.2 1);
+        transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translate(-30%, -30%) scale(1);
     }
 .modal-info{
@@ -1203,4 +1236,26 @@ input .chek-modal {
     fill:#2196f3;}
     input.chek-modal {
         margin-left: 41px;}
+    .cinderella-one:hover .text-animation{
+        transform: translateY(0);
+    }
+    .team-card-two::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: rgba(33, 150, 243, 1);
+ 
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    }
+    .team-card-two:hover::after{
+        opacity: 1;
+    }
+    .picture-action:hover .text-animation{
+        transform: translateY(0);
+    }
     
