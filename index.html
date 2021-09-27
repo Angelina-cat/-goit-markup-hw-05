@@ -71,7 +71,7 @@
                    
                 <button data-modal-open type="button" class='hot-button '> Заказать услугу </button>
             </div>
-            <div  class="anketa-modal " data-modal >
+            <div  class="anketa-modal is-hidden  " data-modal >
                
             <div   class="modal-animation">
                 <div data-modal-close class="modal-icon">
@@ -79,13 +79,41 @@
                    <use  href="./img/21sprite.svg#icon-close-black-18dp-2-1" class="icon-modul" ></use>
                 </svg>
             </div>
+            <div class="form-modal-two">
+            <form action="form-modul" class="form-modal" method="GET">
+              
                 <p class="modal-info">Оставьте свои данные, мы вам перезвоним</p>
-                <p class="text-modal-name">Имя</p>
-                <p class="text-modal-telephone">Телефон</p>
-                <p class="text-modal-mail">Почта</p>
-                <p class="text-modal-comment">Комментарий</p>
-                <p class="text-modal-do">Соглашаюсь с рассылкой и принимаю <a href="" class="blue-color"> Условия договора</a></p>
-                <button type=button class="fly-button"> Отправить </button>
+                
+                <label>
+                  <p class="modal-name">   Имя</p>
+                   
+                    <input type="text" name="username" class="text-modal" required>
+                </label>
+                
+                  
+                    <label >
+                    <p class="telephone-modul">  Телефон</p>
+                        
+                        <input type="tel" name="phone_number" class="kontakt-modal "pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                     </label>
+                     
+                <label> 
+                    <p class="mail-modul">Почта</p>
+                <input  type="email" name="email" class="email-modal" required>
+            </label>
+              
+                <label for="#" class="coment-modal">
+                    <p class="comment-modul">  Коментарий</p>
+                    <textarea name="feedback" rows="5" placeholder="Введите текст" class="commet-text"></textarea>
+                  </label> 
+                  <label for="#" class="modal-agree">
+                  <input type="checkbox" name="check" class="chek-modal">
+                  <p class="text-modal-do">  Соглашаюсь с рассылкой и принимаю <a href="#" class="blue-color">Условия договора</a></p>
+                  </label>
+                <button type="submit" class="fly-button"> Отправить </button>
+                
+            </form>
+        </div>
             </div>
         </div>
         </section>
@@ -484,6 +512,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+  
 </body>
 
 
