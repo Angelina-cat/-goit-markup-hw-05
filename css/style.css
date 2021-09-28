@@ -932,16 +932,17 @@ opacity: 1;
 .text-mobile{
     content: "";
     text-align: center;
-  padding-top: 224px;
+  
     margin-top: 0;
     position: absolute;
     width: 370px;
     height: 70px;
-    top: 0;
+    bottom: 0px;
     left: 0;
     background-color:rgba(47, 48, 58, 0.8);
-    
-    transform: translateY(101%);
+    text-transform: uppercase;
+   margin-bottom: 0px;
+   font-size: 14px;
     transition: transform 250ms ease;
 }
 .text-mobile:hover{
@@ -1245,7 +1246,7 @@ input .chek-modal {
         width: 100%;
         height: 4px;
         background-color: rgba(33, 150, 243, 1);
- 
+ top: 44px;
         position: absolute;
         left: 0;
         opacity: 0;
@@ -1257,5 +1258,18 @@ input .chek-modal {
     }
     .picture-action:hover .text-animation{
         transform: translateY(0);
+    }
+    .form-modal{
+        width: 528px;
+        height: 581px;
+        z-index: 900;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+        
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+         
     }
     
